@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/UserDataGenerationApp/static/css/main.dc4d6ff2.css",
+    "main.js": "/UserDataGenerationApp/static/js/main.19b4a1ca.js",
+    "index.html": "/UserDataGenerationApp/index.html",
+    "main.dc4d6ff2.css.map": "/UserDataGenerationApp/static/css/main.dc4d6ff2.css.map",
+    "main.19b4a1ca.js.map": "/UserDataGenerationApp/static/js/main.19b4a1ca.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dc4d6ff2.css",
+    "static/js/main.19b4a1ca.js"
+  ]
+}
