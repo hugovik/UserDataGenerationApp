@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { faker } from '@faker-js/faker';
 import { styled } from '@mui/material/styles';
+import SocialLinks from './SocialLinks';
 import { 
   Card, 
   CardContent, 
@@ -17,7 +18,7 @@ import {
   Paper, 
   Accordion,
   AccordionSummary,
-  AccordionDetails
+  AccordionDetails,
 } from '@mui/material';
 import DownloadIcon from '@mui/icons-material/Download';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
@@ -335,6 +336,9 @@ const DataGenerator = () => {
         'Other': ['Color', 'TimeZone', 'Locale']
       };
     
+
+
+
       return (
         <StyledCard>
           <CardContent>
@@ -518,6 +522,7 @@ const DataGenerator = () => {
                 </PreviewPaper>
               </Box>
             )}
+            <SocialLinks />
           </CardContent>
         </StyledCard>
       );
