@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/UserDataGenerationApp/static/css/main.dc4d6ff2.css",
-    "main.js": "/UserDataGenerationApp/static/js/main.a44020e3.js",
+    "main.js": "/UserDataGenerationApp/static/js/main.f1b61b33.js",
     "index.html": "/UserDataGenerationApp/index.html",
     "main.dc4d6ff2.css.map": "/UserDataGenerationApp/static/css/main.dc4d6ff2.css.map",
-    "main.a44020e3.js.map": "/UserDataGenerationApp/static/js/main.a44020e3.js.map"
+    "main.f1b61b33.js.map": "/UserDataGenerationApp/static/js/main.f1b61b33.js.map"
   },
   "entrypoints": [
     "static/css/main.dc4d6ff2.css",
-    "static/js/main.a44020e3.js"
+    "static/js/main.f1b61b33.js"
   ]
 }
