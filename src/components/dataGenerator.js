@@ -73,7 +73,6 @@ const DataGenerator = () => {
         Email: false,
         Phone: false,
         Address: false,
-        StreetAddress: false,
         City: false,
         State: false,
         ZipCode: false,
@@ -146,10 +145,9 @@ const DataGenerator = () => {
           if (selectedFields.Avatar) user.avatar = faker.image.avatar();
     
           // Contact Information
-          if (selectedFields.Email) user.email = faker.internet.email();
+          if (selectedFields.Email) user.email = faker.internet.email({ firstName: user.first_name, lastName: user.last_name });
           if (selectedFields.Phone) user.phone = faker.phone.number();
-          if (selectedFields.Address) user.address = faker.location.streetAddress();
-          if (selectedFields.StreetAddress) user.street_address = faker.location.street();
+          if (selectedFields.Address) user.address = faker.location.streetAddress()
           if (selectedFields.City) user.city = faker.location.city();
           if (selectedFields.State) user.state = faker.location.state();
           if (selectedFields.ZipCode) user.zip_Code = faker.location.zipCode();
@@ -163,7 +161,7 @@ const DataGenerator = () => {
           if (selectedFields.JobArea) user.job_area = faker.person.jobArea();
     
           // Internet & Tech
-          if (selectedFields.Username) user.username = faker.internet.userName();
+          if (selectedFields.Username) user.username = faker.internet.userName({ firstName: user.first_name, lastName: user.last_name });
           if (selectedFields.Password) user.password = faker.internet.password();
           if (selectedFields.Website) user.website = faker.internet.url();
           if (selectedFields.ipAddress) user.ip_address = faker.internet.ip();
@@ -328,7 +326,7 @@ const DataGenerator = () => {
     
       const fieldCategories = {
         'Personal Information': ['FirstName', 'LastName', 'MiddleName', 'Gender', 'DOB', 'Age', 'Bio', 'Avatar'],
-        'Contact Information': ['Email', 'Phone', 'Address', 'StreetAddress', 'City', 'State', 'ZipCode', 'Country'],
+        'Contact Information': ['Email', 'Phone', 'Address', 'City', 'State', 'ZipCode', 'Country'],
         'Professional Information': ['Company', 'JobTitle', 'Department', 'Salary', 'JobArea'],
         'Internet & Tech': ['Username', 'Password', 'Website', 'ipAddress', 'UserAgent', 'MACAddress'],
         'Financial': ['CreditCardNumber', 'CreditCardCVV', 'BitcoinAddress', 'BankAccount', 'RoutingNumber'],
